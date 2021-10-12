@@ -20,17 +20,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Directory structure
 
-├── 2005.11129.pdf
-├── 2105.06337.pdf
-├── app.py
-├── documents
-│   └── presentation.pdf
-├── modules
-│   ├── datasets.py
-│   ├── phoeneme_dictionary_extraction.py
-│   └── preprocessing.py
-├── README.md
-└── templates
+├── 2005.11129.pdf 
+├── 2105.06337.pdf 
+├── app.py 
+├── documents 
+│   └── presentation.pdf 
+├── modules 
+│   ├── datasets.py 
+│   ├── phoeneme_dictionary_extraction.py 
+│   └── preprocessing.py 
+├── README.md 
+└── templates 
 
     
 
