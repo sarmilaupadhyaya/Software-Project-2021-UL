@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multilingual Multispeaker TTS</title>
+<link rel="stylesheet" type="text/css" href={{ url_for('static', filename = "tts_style.css") }}>
+</head>
+<body>
+<div style="overflow:scroll;">
+<h1>Multilingual Multispeaker TTS</h1>
+<p> <strong>Bonjour!</strong></p>
+</p>
+    <h3>Language Options</h3>
+        <p>
+            <br><strong>French</strong> 
+	    <br><strong>English</strong> 
+        </p>
+<form action="/" method = "post">
+<label for="text_lang"  >Language of Text</label>
+    <select name="text_lang" id="text_lang">
+      <option value="FR">French</option>
+      <option value="EN">English</option>
+    </select>
+    <br>
+<label for="speaker">Speaker</label>
+    <select name="speaker" id="speaker">
+    <br>
+      <option value="FR">French</option>
+      <option value="EN">English</option>
+    </select>
+    <br>
+<label for="text">Please provide the text you wish to hear.</label>
+    <br>
+    <textarea id="text" name="text">
+    </textarea><br><br>
+
+
+<br>
+<input type="submit" value="synthesize">
+</form>
+<br>
+
+<p>Claésia Costa, Rasul Dent, Anna Kriukova, Sharmila Upadhyaya Last updated: <strong>-</strong></p>
+
+</div>
+</body>
+</html>
