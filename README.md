@@ -20,15 +20,21 @@ Cross Lingual Speaker Adaptation for TTS Applications
 ## Directory structure
 
 ├── 2005.11129.pdf 
+|
 ├── 2105.06337.pdf 
+|
 ├── app.py 
+|
 ├── documents 
+|   |
 │   └── presentation.pdf 
 ├── modules 
+|   |
 │   ├── datasets.py 
 │   ├── phoeneme_dictionary_extraction.py 
 │   └── preprocessing.py 
 ├── README.md 
+|
 └── templates 
 
     
