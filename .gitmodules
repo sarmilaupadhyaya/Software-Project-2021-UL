@@ -1,0 +1,3 @@
+[submodule "MultiSpeaker-TTS-V1"]
+	path = MultiSpeaker-TTS-V1
+	url = https://github.com/sarmilaupadhyaya/MultiSpeaker-TTS-V1.git
