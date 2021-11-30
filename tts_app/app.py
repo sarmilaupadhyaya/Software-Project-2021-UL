@@ -8,7 +8,7 @@ Created on Tue Oct 12 10:30:35 2021
 from flask import Flask, render_template, request, send_file, send_from_directory
 import os
 from os.path import exists
-from gtts import gTTS
+from web_cpu_inf import main as inf
 
 app = Flask(__name__)
 #avoid using cached audio
@@ -20,21 +20,16 @@ def home():
         language = request.form["text_lang"].lower()
         voice_speaker = request.form["speaker"].lower()
         string = request.form["text"]
-        #accent 
-        if language == voice_speaker:        
-            tts =  gTTS(string, lang=language, tld = "ca")
-        else:
-            tts = gTTS(string, lang=voice_speaker)
-        tts.save('data/test.mp3')
+        diffusion = int(request.form["diffusion"])
+        #accent
+        inf(string, "checkpts/grad-tts.pt", timesteps=diffusion)
         return render_template("home.html")
     else:
-        if exists("test.mp3"):
-            os.remove("test.mp3")
         return render_template("home.html")
     
-@app.route("/data/test.mp3", methods = ['GET'])
+@app.route("/out/sample_0.wav", methods = ['GET'])
 def read():
-    return send_from_directory(directory="data", filename="test.mp3", cache_timeout=0)
+    return send_from_directory(directory="out", filename="sample_0.wav", cache_timeout=0)
 
 
 if __name__ == "__main__":

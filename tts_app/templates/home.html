@@ -26,10 +26,18 @@
     <br>
       <option value="FR">French</option>
       <option value="EN">English</option>
-      <option value="ES">Spanish</option>
-      <option value="PT">Portuguese</option>
     </select>
     <br>
+
+<label for="diffusion">Diffusion Rate</label>
+    <select name="diffusion" id="diffusion">
+    <br>
+      <option value=10>10</option>
+      <option value=5>5</option>
+      <option value=2>2</option>
+    </select>
+    <br>
+    
 <label for="text">Please provide the text you wish to hear.</label>
     <br>
     <textarea id="text" name="text">
@@ -41,7 +49,7 @@
 </form>
 
 <audio controls>
-  <source src="/data/test.mp3" autoplay="true" type="audio/mpeg">
+  <source src="/out/sample_0.wav" autoplay="true" type="audio/wav">
 Your browser does not support the audio element.
 </audio>
 <br>
