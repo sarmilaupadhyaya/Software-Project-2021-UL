@@ -4,8 +4,9 @@ Cross Lingual Speaker Adaptation for TTS Applications
 
 # Software Project by team for the Software Project Course at University of Lorraine.
 
-#put our architecture
-![architecture]()
+# Report
+Our report can be accessed here:
+https://www.overleaf.com/read/cgsbzvtczpyv
 
 # Outline
 
