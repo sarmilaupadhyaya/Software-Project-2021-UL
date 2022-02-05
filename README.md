@@ -1,21 +1,23 @@
 
-Cross Lingual Speaker Adaptation for TTS Applications
+# Cross Lingual Speaker Adaptation for TTS Applications
 
 
-# Software Project by team for the Software Project Course at University of Lorraine.
+## Software Project by team for the Software Project Course at University of Lorraine.
+Members: 
 
-# Report
-Our report can be accessed here:
-https://www.overleaf.com/read/cgsbzvtczpyv
+# Abstract
+
+This paper describes a multilingual TTS system for transferring of voice characteristics between speakers in French and English. We modify grad-TTS and experiment with four different model architectures. The results are evaluated both objectively with four metrics and subjectively using MOS for assessing speaker transformation and speech quality. We provide analysis of the results and discuss possible further directions of research. The system demo is available online on (link).
 
 # Outline
 
 1. [Directory Structure](#directory-structure)
 2. [Introduction](#introduction)
 3. [Installation](#installation)
-4. [Dataset](#dataset)
-5. [Contributing](#contributing)
-6. [Licence](#licence)
+4. [Execution](#execution)
+5. [Dataset](#dataset)
+6. [Contributing](#contributing)
+7. [Licence](#licence)
 
 
 ## Directory structure
