@@ -85,7 +85,7 @@ docker run -it [container] /bin/bash
 
 ---
 
-### 7. Initial Downloads
+### Initial Downloads
 
 To download the model checkpoint, go to the [Link](), put both of the model in the results/ folder.
 
