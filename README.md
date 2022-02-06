@@ -157,7 +157,7 @@ To run the webapp, run the following code, being in the root directory.
 
 
 ## Dataset
-![Dataset Distribution](data.png)
+![Dataset Distribution](images/data.png)
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
