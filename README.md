@@ -59,86 +59,33 @@ In this project, we have introduced the implementation of grad-TTS: Diffusion Pr
 
 Note: Since, the project it requires some memory space and RAM, Make sure you have around 3 GB physical disk space, 4 GB RAM and enough space to install the requirements. 
 
-In order to get the model to run, follow these installation instructions.
-
-
-<!-- ### Requirements -->
-Pre-requisites:
-
-    python==3.7.5
-
-On Windows you will also need [Git for Windows](https://gitforwindows.org/).
-
 ---
-_Optional_: to install a specific version of Python:
 
-#### Ubuntu:
+The Dockerfile **tts_app/Grad-docker** creates an image of the Grad-TTS system that is compatible that can be run on a GPU node.
 
-    pyenv install 3.7.5
+- For Grid-5000 users, first install Docker on the node 
 
-(To install ```pyenv```, follow [this tutorial](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation), and then [this one](https://www.laac.dev/blog/setting-up-modern-python-development-environment-ubuntu-20/))
-<!--     sudo apt-install python3.7 -->
+```
+g5k-setup-nvidia-docker -t".
+```
 
+- Then build the image with:
 
-#### Mac:
+```
+"docker build ."
+```
 
-    brew install python@3.7
+- Run a container with:
 
+```
+docker run -it [container] /bin/bash
+```
 
-#### Windows:
-Download Python 3.7.5 for Windows [here](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe), run it and follow the instructions.
-    
----
-### 1. Clone the repository
-
-    git clone [link]
-
-_Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to install a vitual environment.
-
-    bash
-    pip install virtualenv
-    
-    
-    
-#### 2. Navigate to the folder with the cloned git repository
-
-#### 3. Create Virtual Environment
-
-    virtualenv <name of env> --python /usr/bin/python[version] or <path to your python if its not the mentioned one>
-    
-Conda:
-
-    conda create --name <name of your env> python=3.7
-
-#### 4. Activate Virtual Environment
-
-    source name_of_env/bin/activate
-On Windows:
-
-    name_of_env\Scripts\activate
-Conda:
-
-    conda activate <name of your env>
-
-(To leave the virtual environment, simply run: ```deactivate``` (with virtualenv) or ```conda deactivate``` (with Conda))
+- Download/transfer the model checkpoints to the container.
 
 ---
 
-### 5. Install Requirements
-
-    pip install -r requirements.txt
-        
-Conda:
-
-    conda install pip
-    pip install -r requirements.txt
-
-
----
-
-
-
-### 7. Initial Downloads
+### Initial Downloads
 
 To download the model checkpoint, go to the [Link](), put both of the model in the results/ folder.
 
