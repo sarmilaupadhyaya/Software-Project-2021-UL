@@ -57,7 +57,7 @@ In this project, we have introduced the implementation of grad-TTS: Diffusion Pr
 
 ## Installation
 
-Note: Since, the project has three models as the pipeline running serially, it requires some memory space and RAM. Make sure you have around 3 GB physical disk space, 4 GB RAM and enough space to install the requirements. 
+Note: Since, the project it requires some memory space and RAM, Make sure you have around 3 GB physical disk space, 4 GB RAM and enough space to install the requirements. 
 
 In order to get the model to run, follow these installation instructions.
 
@@ -136,30 +136,18 @@ Conda:
 
 ---
 
-_Optional_: If you're on Mac.  
 
-***Note: if you are on mac, then first install wget using brew***  
-
-    brew install wget
-
----
-#### 6. You also need to download the spacy model:
-
-    python -m spacy download en_core_web_lg
-
----
 
 ### 7. Initial Downloads
 
-orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+To download the model checkpoint, go to the [Link](), put both of the model in the results/ folder.
 
 ************************************************************************************************************************************
 **_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
 ## Execution
-**!!!** Before running the application, make sure to change the ```ROOT_PATH``` variable in the ```.env``` file to the path of your project.
+**!!!** .
 
 To run the webapp, run the following code, being in the root directory.
 
@@ -169,16 +157,7 @@ To run the webapp, run the following code, being in the root directory.
 
 
 ## Dataset
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-
-### x DATASET
-
-
-### y Dataset
-
- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+![Dataset Distribution](data.png)
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
