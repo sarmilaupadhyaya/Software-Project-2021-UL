@@ -71,7 +71,7 @@ This paper describes a multilingual TTS system for transferring of voice charact
 
 ```
     
-
+Note: There is a submodule named: MultiSpeaker.. which we do not need to add explicitly as the docker will clone it and run the web app. For further detail you can visit the repo: ![Link](https://github.com/sarmilaupadhyaya/MultiSpeaker-TTS-V1)
 
 ## Introduction
 
@@ -102,7 +102,7 @@ g5k-setup-nvidia-docker -t".
 - Then build the image with:
 
 ```
-"docker build ."
+docker build .
 ```
 
 
