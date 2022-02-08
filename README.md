@@ -22,23 +22,51 @@ This paper describes a multilingual TTS system for transferring of voice charact
 
 ## Directory structure
 
-├── 2005.11129.pdf 
-|
-├── 2105.06337.pdf 
-|
-├── app.py 
-|
-├── documents 
-|   |
-│   └── presentation.pdf 
-├── modules 
-|   |
-│   ├── datasets.py 
-│   ├── phoeneme_dictionary_extraction.py 
-│   └── preprocessing.py 
+├── articles  # artickles that we refered to
+│   ├── a.txt
+│   ├── Glow-TTS_A Generative Flow for Text-to-Speech via.pdf
+│   ├── Grad-TTS_A Diffusion Probabilistic Model for Text-to-Speech.pdf
+│   ├── Natural TTS Synthesis by Conditioning Wavenet on MEL Spectrogram Predictions.pdf
+│   ├── SynPaFlex-Corpus An Expressive French Audiobooks Corpus Dedicated to Expressive Speech Synthesis.pdf
+│   ├── The SIWIS French Speech Synthesis Database – Design and recording of a high quality French database for speech synthesis.pdf
+│   ├── The Structure of Louisiana Creoel.pdf
+│   ├── TUNDRA A multilingual corpus of found data for TTS research created with light supervision.pdf
+│   └── WAVENET_A GENERATIVE MODEL FOR RAW AUDIO.pdf
+├── Dockerfile  # docker file
+├── documents # all presentations
+│   ├── presentation.pdf
+│   ├── TTS - Fifth Presentation.pdf
+│   ├── TTS - Fourth Presentation.pdf
+│   ├── TTS-Second Presentation(1).pdf
+│   ├── TTS-Seventh Presentation.pdf
+│   ├── TTS - Sixths Presentation.pdf
+│   └── TTS - Third Presentation.pdf
+├── images #images of result
+│   └── data.png
+├── modules # some modules for preprocessing
+│   ├── phoeneme_dictionary_extraction.py # extraction of french phonemes
+│   └── preprocessing.py #preprocessing
+├── preprocessing # utils file for preprocessing, only used before training
+│   ├── extract_phonemes.py
+│   ├── get_phonemes.pl
+│   ├── --output
+│   ├── phonemes.csv
+│   ├── phonemes_integer.ipynb
+│   ├── pipeline.py
+│   ├── result.txt
+│   ├── run_all.sh
+│   └── test.txt
 ├── README.md 
-|
-└── templates 
+├── report #reports
+│   ├── Crosslingual_TTS_Draft.pdf
+│   └── overleaf_link.txt
+├── resources #example of data used
+│   └── filelists
+│       ├── final_siwis_test.txt
+│       ├── final_siwis_train.txt
+│       └── final_siwis_val.txt
+
+
 
     
 
@@ -75,30 +103,25 @@ g5k-setup-nvidia-docker -t".
 "docker build ."
 ```
 
-- Run a container with:
+
+- set up the docker repo name and tag. Image id is created in the previous step. You can see the latest docker with: "docker images"
 
 ```
-docker run -it [container] /bin/bash
+docker <image-id> web:tts
 ```
-
-- Download/transfer the model checkpoints to the container.
 
 ---
-
-### Initial Downloads
-
-To download the model checkpoint, go to the [Link](), put both of the model in the results/ folder.
-
-************************************************************************************************************************************
-**_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
 ## Execution
 **!!!** .
 
-To run the webapp, run the following code, being in the root directory.
+To run the webapp, you can run the above docker.
 
-    python3 src/views.py
+```
+docker run web:tts
+
+```
 
 ---
 
