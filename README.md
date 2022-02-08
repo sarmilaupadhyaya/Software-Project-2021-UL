@@ -22,6 +22,8 @@ This paper describes a multilingual TTS system for transferring of voice charact
 
 ## Directory structure
 
+```
+
 ├── articles  # artickles that we refered to
 │   ├── a.txt
 │   ├── Glow-TTS_A Generative Flow for Text-to-Speech via.pdf
@@ -67,7 +69,7 @@ This paper describes a multilingual TTS system for transferring of voice charact
 │       └── final_siwis_val.txt
 
 
-
+```
     
 
 
