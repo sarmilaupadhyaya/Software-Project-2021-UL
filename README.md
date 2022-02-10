@@ -3,7 +3,7 @@
 
 
 ## Software Project by team for the Software Project Course at University of Lorraine.
-Members: 
+Members: Sharmila Upadhyaya, Anna Kriukova, Rasul Dent, Claésia Costa
 
 # Abstract
 
@@ -24,7 +24,7 @@ This paper describes a multilingual TTS system for transferring of voice charact
 
 ```
 
-├── articles  # artickles that we refered to
+├── articles  # articles that we refered to
 │   ├── a.txt
 │   ├── Glow-TTS_A Generative Flow for Text-to-Speech via.pdf
 │   ├── Grad-TTS_A Diffusion Probabilistic Model for Text-to-Speech.pdf
@@ -109,14 +109,13 @@ docker build .
 - set up the docker repo name and tag. Image id is created in the previous step. You can see the latest docker with: "docker images"
 
 ```
-docker <image-id> web:tts
+docker tag <image-id> web:tts
 ```
 
 ---
 
 
 ## Execution
-**!!!** .
 
 To run the webapp, you can run the above docker.
 
