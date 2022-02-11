@@ -7,7 +7,7 @@ Members: Sharmila Upadhyaya, Anna Kriukova, Rasul Dent, Claésia Costa
 
 # Abstract
 
-This paper describes a multilingual TTS system for transferring of voice characteristics between speakers in French and English. We modify grad-TTS and experiment with four different model architectures. The results are evaluated both objectively with four metrics and subjectively using MOS for assessing speaker transformation and speech quality. We provide analysis of the results and discuss possible further directions of research. The system demo is available online on (link).
+This project is a multilingual TTS system for transferring of voice characteristics between speakers in French and English. We modify grad-TTS and experiment with four different model architectures. The results are evaluated both objectively with four metrics and subjectively using MOS for assessing speaker transformation and speech quality. We provide analysis of the results and discuss possible further directions of research. The system demo is available online on (link).
 
 # Outline
 
@@ -71,7 +71,7 @@ This paper describes a multilingual TTS system for transferring of voice charact
 
 ```
     
-Note: There is a submodule named: MultiSpeaker.. which we do not need to add explicitly as the docker will clone it and run the web app. For further detail you can visit the repo: ![Link](https://github.com/sarmilaupadhyaya/MultiSpeaker-TTS-V1)
+Note: There is a submodule named: MultiSpeaker-TTS-V1 which we do not need to add explicitly as the docker will clone it and run the web app. For further detail you can visit the repo: ![Link](https://github.com/sarmilaupadhyaya/MultiSpeaker-TTS-V1)
 
 ## Introduction
 
